@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Parallax Template - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+
+    <div id="task-tab" class="parallax-container" >
+        <div class="section no-pad-bot">
+          <div class="container">
+                <div class="col">
+                <input type="text" id="tbTask" placeholder="task name">
+                <button id="btTask" onClick="onRegisterKeyDown()" class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons">add</i></button>
+                </div>
+            <div id="taskList" class="collection">
+            </div>
+
+            <button id = "getPosition" onClick="getPosition()">CURRENT POSITION</button>
+            <button id = "watchPosition" onClick="watchPosition()">WATCH POSITION</button>
+        </div>
+      </div>
+  </div>
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="./js/materialize.js"></script>
+    <script src="./js/task.js"></script>
+</body>
+</html>
